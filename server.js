@@ -14,7 +14,7 @@ const { CloudPakForDataAuthenticator, NoAuthAuthenticator, IamAuthenticator } = 
 
 
 const app = express();
-//const PORT = process.env.PORT || 4500;
+const PORT = process.env.PORT || 4500;
 // const assistant = new AssistantV2({
 //   version: '2021-06-14',
 //   authenticator: new IamAuthenticator({
@@ -87,6 +87,6 @@ console.log(myFilename);
 })
 
 
-app.listen(8081, () => {
-    console.log('server is running at port 8081');
+app.listen(PORT, () => {
+    console.log('server is running at port'+PORT);
 })
