@@ -31,7 +31,7 @@ app.use(cors()); // it enables all cors requests
 app.use(fileUpload());
 
 // file upload api
-app.post('/upload', (req, res) => {
+app.post('https://wassistant-5.onrender.com/upload', (req, res) => {
 
     if (!req.files) {
         return res.status(500).send({ msg: "file is not found" })
